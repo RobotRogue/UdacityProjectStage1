@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Session 1 Notes by Nelson</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="http://www.whiskeythemaker.com/favicon.ico">
+</head>
+
+<body>
+<div class="lesson">
+    <div class="lessonContainer">
+        <h1>Lesson 1: The Basics of the Web and HTML</h1>
+
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>The Web</h2>
+                </div>
+                    <p>
+                        The Web can be broken down into a few main pieces: HTML, HTTP, and URLs.
+                    </p>
+                    <p>
+                        <b>HTML:</b> The web is a collection of HTML Documents (Hyper Text Markup Language) -- HTML is what glues everything together, and also the main type of document on the web.
+                        The types of files that can be found on the web also include Plain Text, HTML, images, videos, music, etc.
+                    </p>
+                    <p>
+                        <b>HTTP:</b> Stands for Hyper Text Transfer Protocol. It's the protocol (kind of like a language)l used to transfer data from web servers to your browser.
+                    </p>
+                    <p>
+                        <b>URLs:</b> Also known as 'links' - these are the pointers used to point to HTML documents on the internet. A URL can be formatted like this: <b>http://www.udacity.com</b>
+                    </p>
+                    <p>
+                        To include this into a webpage, you would use the &lt;a href:&quot;...&quot;&gt; or 'Anchor' tag.
+                    </p>
+                    <p>
+                        Another way to use it in HTML is the &lt;link&gt; tag, which can be handy when linking to say, a CSS file or a .JS file. It looks like this: <b>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</b>
+                    </p>
+            </div>
+
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>What is HTML?</h2>
+                </div>
+                    <p>
+                        HTML is the language that webpages are 'coded' in.  HTML is made up of:
+                    </p>
+
+                    <ul>
+                        <li>Text content, or 'what you see'... </li>
+                        <li>Markup language, or 'what the content looks like'... </li>
+                        <li>References to other documents, like images or videos...</li>
+                        <li>Links to other pages (URLs)</li>
+                    </ul>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>HTML Tags:</h2>
+                </div>
+                    <p>
+                        HTML markup is made up of tags. Most (not all) tags consist of an &lt;openingTag&gt; and a &lt;/closingTag&gt; and between those tags are your content.<br />
+                        The opening tag, content, and closing tag are also referred to as an &quot;Element&quot;. The tags that don't require a closing tag are called &quot;Void Tags&quot;.
+                    </p>
+                    <p>
+                        Some basic tags found in HTML documents are:
+                    </p>
+                    <ul>
+                        <li>&lt;b&gt;&lt;/b&gt; The "bold" tag. It makes text <b>bold</b></li>
+                        <li>&lt;em&gt;&lt;/em&gt; The "emphasis" (or, Italic) tag. It <em>italicizes</em> text.</li>
+                        <li>&lt;p&gt;&lt;/p&gt; The "paragraph" tag. It puts an invisible 'block' or 'box' around the content.</li>
+                        <li>&lt;img&gt; The "image" tag (for including images in a webpage, note: it's good practice to use the alt=&quot;description of image&quot; attribute)</li>
+                        <li>&lt;br&gt; The "break" tag (think of it like hitting the enter key in a word document)</li>
+                        <li>&lt;span&gt; Used to group inline elements in a document. </li>
+                        <li>&lt;div&gt; Defines a division or a section in an HTML document. (Ie: it can be used to group block-elements to format them with CSS)</li>
+                    </ul>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>HTML Tag Attributes:</h2>
+                </div>
+                    <p>
+                        Tags have something called HTML Attributes. Attributes have a value, or definition or control to that attribute. The format of an HTML tag with attributes would look something like this: &lt;tag attr=&quot;value&quot;&gt;content&lt;/tag&gt;
+                    </p>
+                    <p>
+                        And an example of that would be along the lines of: &lt;a href=&quot;www.udacity.com&quot;&gt;Udacity's Website&lt;/a&gt;
+                    </p>
+                    <p>
+                        How that breaks down is: the 'a' is the opening tag, called anchor, the href is the attribute, www.udacity.com is the value, Udacity's Website is the content, and the /a is the closing tag.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>'Inline' vs. 'Block' Tags:</h2>
+                </div>
+                    <p>
+                        One other thing to mention is the difference between an "inline" tag and a "block" tag. Knowing the difference is important in HTML because your web browser sees and treats these tags differently.
+                    </p>
+
+                    <ul>
+                        <li><em>Inline tags</em> - applies formatting or attributes to what is between those tags, and nothing else. This is important because you can control content within block tags with inline elements. (Among other things)</li>
+                        <li><em>Block tags</em> - the formatting applies a 'container' around the content within those tags. The container can be controlled with attributes and CSS. The content inside the container can be also. Learning how to manipulate block tags is <em>pretty</em> important to developing web pages.</li>
+                    </ul>
+                    <p>
+                        Some more into this are &lt;span&gt; and &lt;div&gt; elements. SPAN is an inline element, DIV is block element.
+                    </p>
+            </div>
+    </div>
+</div>
+<div class="lesson">
+    <div class="lessonContainer">
+        <h1>Lesson 2: Creating a Structured Document with HTML</h1>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Elements of a Webpage</h2>
+                </div>
+                    <p>
+                        HTML is the structure of a page. <br>
+                        CSS is more of the style of a page. Controls color, formatting, and so on.<br>
+                        JS files are the interactive parts of a page. They change some element of a page.<br>
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Developer Tools (Console)</h2>
+                </div>
+                    <p>
+                        Using your browsers built-in developer console allows you to see what's going on "under the hood".
+                        There are multiple ways to open the developer tools in Chrome (https://developer.chrome.com/devtools/docs/shortcuts)
+                    </p>
+                    <p>
+                        This tool allows you to see how the browser is treating what is in the page that it is displaying. It allows you to see different elements, the page structure (or, DOM), you can expand and collapse the tree, and even make some (temporary) modifications to the page to see what affects what.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Page Structure</h2>
+                </div>
+                    <p>
+                        The browser will build a tree-like structure of the HTML it is reading. In the Developer Tools of your browser you can view this structure - and expand and collapse the different elements within the tree. Multiple elements can be nested within each other.
+                    </p>
+                    <p>
+                        For example, the tree might display a Paragraph tag (element) and when expanded, you might see Anchor tags, IMG tags, SPAN tags, text, and so on.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Visual Styling</h2>
+                </div>
+                    <p>
+                        Two pages can have identical HTML, however can look completely different. The reason they could look different is the styling applied to the page. So the HTML code can structure the elements of the page, and the styling can dictate what those elements look like.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Summary So Far</h2>
+                </div>
+                    <p>
+                        HTML and CSS are both "languages"
+                        HTML controls the "structure" of a web page
+                        CSS controls the "style" of a page (how it looks).
+                        When programmers talk about the "DOM" they are talking about the tree-like structure of a page.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>HTML/CSS/DOM</h2>
+                </div>
+                    <p>
+                        <b>HTML</b> - HyperText Markup Language - the standard markup language used to create web pages.
+                    </p>
+                    <p>
+                        <b>CSS</b> - Cascading Style Sheets - style sheet language used for describing the look and formatting of a document written in a markup language.
+                    </p>
+                    <p>
+                        <b>DOM</b> - Document Object Model - a cross-platform and language-independent convention for representing and interacting with objects in HTML
+                        (and other markup languages). The nodes of every document are organized in a tree structure, called the DOM tree.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Boxes and More Boxes</h2>
+                </div>
+                    <p>
+                        A website can be broken down into a series of boxes (from a few to a lot, depending on how detailed you want to get with styling).
+                    </p>
+                    <p>
+                        When you think of your webpage as a series of boxes on a grid for example, it makes it a lot easier to move elements around and plan your designs. Also, if you can visualize how the page is laid out as boxes, it can help your write and format your HTML with that in mind, which can also make it easier for you to make changes later if you need to.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>From Boxify-ing to HTML</h2>
+                </div>
+                    <p>
+                        Boxifying is the concept of taking a mockup or design, and seeing it as a series of boxes (or boxes within boxes). You can go about figuring this out in a few ways, such as printing a mockup and drawing boxes around parts of the page, as an example.
+                    </p>
+                    <p>
+                        Once you figure out how to boxify your design, you can then start planning how to apply visual styling to those boxes and what is inside them. You can assign a "class" to each of these boxes. Think of a class as a label. Classes allow you to create a style for that class, and then you can apply that class or style to various boxes (elements) in your page.
+                    </p>
+                    <p>
+                        To define and apply the styles to your classes, you would commonly use a style sheet (This is where CSS comes into play). A style sheet is basically a document that defines the styles to elements, classes, etc. It allows you to write simpler HTML, and define and apply styling easier.
+                    </p>
+
+            </div>
+    </div>
+</div>
+<div class="lesson">
+    <div class="lessonContainer">
+        <h1>Lesson 3: Adding Style to Structure with CSS</h1>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>In-page Styling vs. Linking to a CSS File</h2>
+                </div>
+                    <p>
+                        Adding a link to a style sheet can be done in the &lt;head&gt; tags... by using &quot;link&quot;, as an example: <b>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</b>
+                    </p>
+                    <p>
+                        BUT, you can also apply style directly, without having to use a separate file and link tag. You can do so by using the &lt;style&gt; tags, shown below:
+                    </p>
+                    <p class="bold">
+                        &lt;style&gt;<br />
+                        <span class="tabbed">.description {</span><br />
+                        <span class="tabbed">color: red;</span><br />
+                        <span class="tabbed">}</span><br />
+                        &lt;/style&gt;
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>CSS Order Rules</h2>
+                </div>
+                    <p>
+                        You can also think about CSS as a search and replace tool:
+                        you identify a class or a tag of the element you want to find (or match, in CSS terminology),
+                        and then what you want to do with it, or what property values to replace with different ones.
+                    </p>
+            </div>
+
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Order Matters</h2>
+                </div>
+                    <p>
+                        It also matters where you define the rules and in what order they are applied.
+                        Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:
+                    </p>
+                    <p>
+                        the default style of a browser (different browsers have slightly different styles)
+                        stylesheet in a separate file (this is what you will be mostly using)
+                        stylesheet inside HTML (this can be done for small projects but is not ideal)
+                        inline style in an element (this can also be done but should be avoided)
+                    </p>
+            </div>
+
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Specifics Matter</h2>
+                </div>
+                    <p>
+                        "Cascading" means that rules are applied not only to the elements they directly match,
+                        but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it,
+                        the more specific rule takes effect.
+                    </p>
+                    <p>
+                        In general, descendant elements inherit text-related properties, but box-related properties are not inherited.
+                        Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align text-indent, text-transform,
+                        visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear,
+                        height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.
+                    </p>
+                    <p>
+                        Inheritance prevents certain properties from being declared over and over again in a style sheet, allowing the software developers to write less CSS.
+                        It enhances faster-loading of web pages by users and enables the clients to save money on bandwidth and development costs.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Get Classy</h2>
+                </div>
+                    <p>
+                        "Class" is like a group, or a label, if you like. For example:
+                    </p>
+                    <p class="bold">
+                        &lt;h1 class=&quot;article&quot;&gt;
+                    </p>
+                    <p>
+                        Above, "article" is the value of the class for &lt;h1&gt;. In CSS, if you put in something like...
+                    </p>
+                    <p class="bold">
+                        .article {<br>
+                        <span class="tabbed">color: #EFEFEF;</span><br>
+                        }
+                    </p>
+                    <p>
+                        You would be able to apply that color to the class "article" when you use it in HTML.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Elementary, My Dear</h2>
+                </div>
+                    <p>
+                        When creating HTML and CSS for your page, your elements should choose the right element for the right content.
+                        As an example, if you have a title to an article, that's only text. In HTML, instead of using a DIV tag, it would be more appropriate to use the H1 tag, as that is meant for text/titles. (Especially when your webpage is indexed by search engines)
+                    </p>
+                    <p>
+                        Another reason to do so, relates back to inheritance. You can apply styling to the H1 tag as an example, and wrap the H1 element in a DIV tag with different styling. It's a way to add even more control over styling of each page element. (But be cautious, this can get out of hand pretty quick.)
+                    </p>
+            </div>
+
+
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Box Models</h2>
+                </div>
+                    <p>
+                        The box model is important to understand. Open <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/box-model.html" target="blank">this link</a> to display the box model. The "content" can be text or an image... whatever. Around that is the padding, then the border, then the margin. Each of these can be controlled in CSS, and also each behave a bit differently.
+                    </p>
+                    <p>
+                        The margin, border, and padding can have their own attributes, including color, style, width, and so on. The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="blank">CSS reference page</a> is a big help here, because there are a lot of things you can do to each.
+                    </p>
+            </div>
+            
+            
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Wide Boxes</h2>
+                </div>
+                    <p>
+                        Keeping the box model in mind, there are a few things to know. Each of the 'boxes' (margin, border, padding, and the content) all have width. Now, you don't *have* to assign a width value to them, but the content will always have width. If you do plan to use padding, and set width values, be mindful that they all add up.
+                    </p>
+                    <p>
+                        So in other words, if you assign a width to each, you have to total those all up, and that's how much actual width your element will use on a page. 
+                    </p>
+                    <p>
+                        One way around having to constantly calculate how much width is used, you can use the CSS style called "box-sizing: border-box;" This allows you to set the box width, and it will auto-adjust it. (It doesn't include the margin in this though)
+                    </p>
+                    <p>
+                        There is a small problem to using this -- older browsers don't support this CSS style. By using browser-specific code/prefixes for the box-sizing style, you can get around it, but it's not perfect (yet).
+                    </p>
+                    <p>
+                        Another way to handle box sizing, is to use percentages for the sizing. It adjusts the sizing based on the size of your screen or browser window. But there are limitations to this as well. If you resize too large or too small, because it's based on percentage, this could have some unexpected effects.<br>
+                        But, there is a way to combat this as well. You can use 'max-width' styling in CSS, so when resizing, or if viewed on a screen larger than you expected, it will prevent the page from expanding too far and looking strange.
+                    </p>
+            </div>
+            
+            
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Box Stacking</h2>
+                </div>
+                    <p>
+                        Now that you understand that pages are a bunch of boxes, and how to control the style and size of those boxes, now you need to control where the boxes get positioned on a page. For now they've mostly stacked one on top of another. Well you don't always want that, sometimes you'll want a box beside a box and so on.
+                    </p>
+                    <p>
+                        To get a DIV to display next to another one, you would use "display: flex". This will cause one DIV to sit next to another DIV. This could potentially look weird if one box is taller than the other for example, but using "box-sizing: border-box;" can be helpful here as well.
+                    </p>
+            </div>
+            
+            
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Picture This</h2>
+                </div>
+                    <p>
+                        Another form of content for your webpage are images. The image itself has to reside somewhere for your page to link to. If for example you have an image on your hard drive, but your page is on the internet -- your page can't point to your computers hard drive (not without a web server)... so your image would have to be stored somewhere on the internet or the web server where your website is. 
+                    </p>
+                    <p>
+                        Once you have a home for your images, you can use the IMG tag in HTML to display the images on your page. The IMG tag looks something like this:
+                    </p>
+                    <p class="bold">
+                        <span class="tabbed">&lt;img src=&quot;img/app.png&quot; alt=&quot;This is a screenshot&quot;&gt;</span>
+                    </p>
+                    <p>
+                        To break that down, "IMG" is the tag, "SRC" is the source or location of the image file, "ALT" is the alternate display of the image (in case the browser can't display it, and also for vision impaired web viewers) -- it is good form to always include ALT text for your image.
+                    </p>
+            </div>
+            
+            
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Test and Revise</h2>
+                </div>
+                    <p>
+                        When writing code, you will need to test your work to see if it actually does what you expect it to. It's also standard practice in software development, since a bug can make or break your program (or in the case of web design, can cause your page to display really weird, or not at all)
+                    </p>
+                    <p>
+                        As you code, you should run your tests (in the case of web design, save your html and view it in a browser) - if anything looks weird, doesn't display, or needs to be changed - go back to your HTML and make your changes. Do this often, so you can get a good idea of what you're doing in HTML and CSS and how it affects what is displayed in the browser.
+                    </p>
+                    <p>
+                        Whenever possible, view your site in other browsers... Firefox, IE, on your iPad or Android device... this will give you a really good idea of how your code works and how it works in other environments.
+                    </p>
+            </div>
+            <div class="lessonContent">
+                <div class="lessonTitle">
+                <h2>Get Valid</h2>
+                </div>
+                    <p>
+                        Both HTML and CSS have a specific format that they need to be written in to work. The browser does it's best to interperet and display the page even if you don't quite get your HTML and CSS 100% correct.
+                    </p>
+                    <p>
+                        Of course, it's good form to write correct code (especially in programming!) so there are tools available to check your code to see if it has errors, and to see if it meets the standards.
+                    </p>
+                    <p>
+                        The validator for HTML can be found <a href="http://validator.w3.org/#validate_by_input" target="blank">here</a>.
+                    </p>
+                    <p>
+                        The validator for CSS can be found <a href="http://jigsaw.w3.org/css-validator/#validate_by_input" target="blank">here</a>.
+                    </p>
+            </div>
+
+    </div>
+</div>
+
+</body>
+</html>
